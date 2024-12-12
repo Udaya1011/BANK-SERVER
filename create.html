@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create Account</a>
+        <a href="transaction.html">Transaction</a>
+        <a href="details.html">Details</a>
+    </div>
+
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="withdraw.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container" style="color: beige; float: right; padding-top: 10%;padding-right: 10%;">
+        <h1 style="color:skyblue;">Create Account</h1>
+        <form id="accountForm">
+            <input type="text" id="name" required placeholder="Name..."><br><br>
+            <input type="password" id="password" required placeholder="Password...">
+            <button type="submit">Create Account</button>
+        </form>
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>

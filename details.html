@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+       
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            float: right;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 50px auto;
+            margin-right: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        #transactionDetails li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted class="background-video">
+        <source src="withdraw.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create Account</a>
+        <a href="transaction.html">Transaction</a>
+        <a href="details.html">Details</a>
+    </div>
+    <div class="container">
+        <h1 style="color: skyblue;">Transaction Details</h1>
+        <ul id="transactionDetails"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

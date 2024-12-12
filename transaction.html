@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSACTION</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <video autoplay loop muted class="background-video">
+        <source src="withdraw.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create Account</a>
+        <a href="transaction.html">Transaction</a>
+        <a href="details.html">Details</a>
+    </div>
+
+    <div class="container" style="float: right; padding-right: 10%; padding-top:10%;">
+        <h1 style="color: skyblue;">Transaction</h1>
+        <form id="transactionForm" style="color: beige;">
+            <input type="text" id="userName" required placeholder="Name...">
+            <input type="password" id="userPassword" required placeholder="Password...">
+            <input type="number" id="amount" required placeholder="Amount...">
+            <label for="type">Transaction Type:</label>
+            <select id="type">
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
+            <button type="submit">Submit Transaction</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
